@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gai.Database", "Gai.Database\Gai.Database.csproj", "{CE3B8D10-EABF-4621-AEF9-E29191005AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gai.Mind", "Gai.Mind\Gai.Mind.csproj", "{52035375-1756-4809-A9E6-C7FAF3EE0B04}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CE3B8D10-EABF-4621-AEF9-E29191005AF9} = {CE3B8D10-EABF-4621-AEF9-E29191005AF9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gai.Web", "Gai.Web\Gai.Web.csproj", "{EAD1EFA4-91A9-41F6-8978-E84530D9A211}"
+	ProjectSection(ProjectDependencies) = postProject
+		{52035375-1756-4809-A9E6-C7FAF3EE0B04} = {52035375-1756-4809-A9E6-C7FAF3EE0B04}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE3B8D10-EABF-4621-AEF9-E29191005AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3B8D10-EABF-4621-AEF9-E29191005AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3B8D10-EABF-4621-AEF9-E29191005AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3B8D10-EABF-4621-AEF9-E29191005AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52035375-1756-4809-A9E6-C7FAF3EE0B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52035375-1756-4809-A9E6-C7FAF3EE0B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52035375-1756-4809-A9E6-C7FAF3EE0B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52035375-1756-4809-A9E6-C7FAF3EE0B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD1EFA4-91A9-41F6-8978-E84530D9A211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD1EFA4-91A9-41F6-8978-E84530D9A211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD1EFA4-91A9-41F6-8978-E84530D9A211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD1EFA4-91A9-41F6-8978-E84530D9A211}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

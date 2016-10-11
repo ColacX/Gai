@@ -1,0 +1,14 @@
+/Gai.Backend/.vs
+/Gai.Backend/Gai.Database/obj
+/Gai.Backend/Gai.Database/bin
+/Gai.Backend/Gai.Mind/obj
+/Gai.Backend/Gai.Mind/bin
+/Gai.Backend/Gai.Web/obj
+/Gai.Backend/Gai.Web/bin
+/Gai.Backend/packages
+/Gai.Unity/Library
+/Gai.Unity/Temp
+/Gai.Unity/Gai.Unity.CSharp.csproj
+/Gai.Unity/Gai.Unity.CSharp.Editor.csproj
+/Gai.Unity/Gai.Unity.sln
+/Gai.Unity/.vs
