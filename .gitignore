@@ -12,3 +12,7 @@
 /Gai.Unity/Gai.Unity.CSharp.Editor.csproj
 /Gai.Unity/Gai.Unity.sln
 /Gai.Unity/.vs
+/Gai.Backend/Gai.Protocol/bin/Debug
+/Gai.Backend/Gai.Protocol/obj/Debug
+/Gai.Backend/Gai.Server/bin/Debug
+/Gai.Backend/Gai.Server/obj/Debug

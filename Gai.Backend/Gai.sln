@@ -15,6 +15,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gai.Web", "Gai.Web\Gai.Web.
 		{52035375-1756-4809-A9E6-C7FAF3EE0B04} = {52035375-1756-4809-A9E6-C7FAF3EE0B04}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gai.Server", "Gai.Server\Gai.Server.csproj", "{F8B3F8DE-C267-45AC-A89A-D23F086D0E63}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CE3B8D10-EABF-4621-AEF9-E29191005AF9} = {CE3B8D10-EABF-4621-AEF9-E29191005AF9}
+		{52035375-1756-4809-A9E6-C7FAF3EE0B04} = {52035375-1756-4809-A9E6-C7FAF3EE0B04}
+		{BF77A87C-7BF3-4BFD-BF55-04FB4874830C} = {BF77A87C-7BF3-4BFD-BF55-04FB4874830C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gai.Protocol", "Gai.Protocol\Gai.Protocol.csproj", "{BF77A87C-7BF3-4BFD-BF55-04FB4874830C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +42,14 @@ Global
 		{EAD1EFA4-91A9-41F6-8978-E84530D9A211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAD1EFA4-91A9-41F6-8978-E84530D9A211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAD1EFA4-91A9-41F6-8978-E84530D9A211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B3F8DE-C267-45AC-A89A-D23F086D0E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B3F8DE-C267-45AC-A89A-D23F086D0E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B3F8DE-C267-45AC-A89A-D23F086D0E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B3F8DE-C267-45AC-A89A-D23F086D0E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF77A87C-7BF3-4BFD-BF55-04FB4874830C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF77A87C-7BF3-4BFD-BF55-04FB4874830C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF77A87C-7BF3-4BFD-BF55-04FB4874830C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF77A87C-7BF3-4BFD-BF55-04FB4874830C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
