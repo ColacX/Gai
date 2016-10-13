@@ -22,6 +22,12 @@ namespace Gai.Server
 		List<TcpClient> clients = new List<TcpClient>();
 		List<Task> tasks = new List<Task>();
 
+		private void SendEntity(StreamWriter writer, int entityId)
+		{
+			var jsonData = JsonConvert.SerializeObject(new { messageType = EMessageType.Entity });
+			writer.WriteLine(jsonData);
+		}
+
 		public async Task AcceptClient(TcpClient client)
 		{
 			Logger.Trace("accepting client");
@@ -45,12 +51,6 @@ namespace Gai.Server
 					}
 				}
 			}
-		}
-
-		private void SendEntity(StreamWriter writer, int entityId)
-		{
-			var jsonData = JsonConvert.SerializeObject(new { messageType = EMessageType.Entity });
-			writer.WriteLine(jsonData);
 		}
 
 		public async Task AwaitClients()
@@ -78,13 +78,6 @@ namespace Gai.Server
 		public void Start()
 		{
 			Logger.Trace("start");
-
-			var s = JsonConvert.SerializeObject(new { x = 123, y = new { a = 2 } });
-			dynamic o = JsonConvert.DeserializeObject(s);
-			switch((int)o.x)
-			{
-
-			}
 			tasks.Add(AwaitClients());
 		}
 
